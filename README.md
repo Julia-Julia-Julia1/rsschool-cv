@@ -1,3 +1,3 @@
 # rsschool-cv
 new repository
-https://github.com/Julia-Julia-Julia1/rsschool-cv
+https://your-github-account.github.io/rsschool-cv/cv 
