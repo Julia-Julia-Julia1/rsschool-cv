@@ -57,3 +57,5 @@ Udemy
 **Russian
 **Belorussian
 \*English (B2 in process)
+
+<img src="./rsschool-cv/images/photo_for_resume.jpg" width="200"/>
