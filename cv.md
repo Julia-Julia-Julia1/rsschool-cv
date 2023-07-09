@@ -12,12 +12,12 @@
 
 # About Me
 
-`Hi everyone! My name is Yuliya. I m 43 years old. I hadn't experience in large IT companies. I want become a real professional on this sphere. Sociable, love learn new technologies. Love reading, friendly. Driving car. I m here for my growth and learning. And update my knowledges in the field of front-end development.`
+`Hi everyone! My name is Yuliya. I m 43 years old. I hadn't experience in large IT companies. I want become a real professional on this sphere. Sociable, love learn new technologies. Love reading, friendly. Driving car. I m here for my growth and learning. And update my knowledges  in the field of front-end development.`
 
 # Skills
 
 **HTML-5
-**CSS
+**CSS-3
 **JavaScript (Fundamentals, ES6+, DOM)
 **Git/CitHub
 \*Figma
@@ -48,11 +48,12 @@ return s.slice(0,-1);
 
 # Education
 
-Belorussian State University
-**faculty of foriegn languages and informatics
-Programming Academy in Silicon valley(Codewars)
+Mogilev State University
+**Faculty of foreign languages and informatics.
+Programming Academy in Silicon valley.
+**Codewars
 Udemy
-**React
+\*\*React
 
 # Languages
 
