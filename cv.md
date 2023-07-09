@@ -1,5 +1,7 @@
 `cv.md`
 
+**<img src="./images/photo_for_resume.png" width="200"/>**
+
 # Yuliya Haluza
 
 - My Contact Info:
@@ -57,5 +59,3 @@ Udemy
 **Russian
 **Belorussian
 \*English (B2 in process)
-
-**<img src="./rsschool-cv/images/photo_for_resume.png" width="200"/>**
