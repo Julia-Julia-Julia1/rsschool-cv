@@ -8,7 +8,7 @@
 2. Phone: +375 29 384-49-06
 3. E-mail: <yuliyahaluza@gmail.com>
 4. GitHub: Julia-Julia-Julia1
-   5 Telegram: @YuliyaHaluza
+5. Telegram: @YuliyaHaluza
 
 ### About Me
 
@@ -16,11 +16,12 @@
 
 #### Skills
 
-*HTML-5
-*CSS-3
-*JavaScript (Fundamentals, ES6+, DOM)
-*Git/CitHub
-\*Figma
+1. Markdown
+2. HTML-5
+3. CSS-3
+4. JavaScript (Fundamentals, ES6+, DOM)
+5. Git/CitHub
+6. Figma
 
 ##### Code Examples
 
@@ -48,20 +49,17 @@ return s.slice(0,-1);
 
 ###### Education
 
-*Mogilev State University. Faculty of foreign languages and informatics.
-*VisualBasic 6.0*
-==============================================
-*Programming Academy in Silicon valley.
-==============================================
-_Codewars._
-==============================================
+1. Mogilev State University. Faculty of foreign languages and informatics.
+   VisualBasic 6.0
 
-\*Udemy
-_React._
-==============================================
-HTMLacademy
-_Figma, HTML-5._
-==============================================
+2. Programming Academy in Silicon valley.
+   Codewars
+
+3. Udemy.
+   React
+
+4. HTMLacademy.
+   Figma, HTML-5
 
 ###### Languages
 
