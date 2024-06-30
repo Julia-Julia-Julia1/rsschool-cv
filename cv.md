@@ -1,28 +1,28 @@
-`cv.md`
+# **cv.md**
 
-**<img src="./images/Yuliya.jpg" width="200"/>**
+<img src="./images/Yuliya.jpg" alt="My photo" width="200"/>
 
-# Yuliya Haluza
+## Yuliya Haluza
 
-- My Contact Info:
-  - Phone: +375 29 384-49-06
-  - E-mail: yuliyahaluza@gmail.com
-  - GitHub: Julia-Julia-Julia1
-  - Telegram: @YuliyaHaluza
+1. My Contact Info:
+2. Phone: +375 29 384-49-06
+3. E-mail: <yuliyahaluza@gmail.com>
+4. GitHub: Julia-Julia-Julia1
+   5 Telegram: @YuliyaHaluza
 
-# About Me
+### About Me
 
 `Hi everyone! My name is Yuliya. I m 46 years old. I hadn't experience in large IT companies. I want become a real professional on this sphere. Sociable, love learn new technologies. Love reading, friendly. Driving car. I m here for my growth and learning. And update my knowledges  in the field of front-end development.`
 
-# Skills
+#### Skills
 
-**HTML-5
-**CSS-3
-**JavaScript (Fundamentals, ES6+, DOM)
-**Git/CitHub
+*HTML-5
+*CSS-3
+*JavaScript (Fundamentals, ES6+, DOM)
+*Git/CitHub
 \*Figma
 
-# Code Examples
+##### Code Examples
 
 ```Напишите функцию с именем upsideDown, которая принимает число n в качестве аргумента и возвращает треугольник из n строк, состоящих из звездочек (*). В первой строке n звездочек, во второй - (n-1) звездочка, ... , в последней строке 1 звездочка.
 Все строки кроме последней, заканчиваются символом \n перевода строки.
@@ -46,17 +46,25 @@ return s.slice(0,-1);
 }
 ```
 
-# Education
+###### Education
 
-Mogilev State University
-**Faculty of foreign languages and informatics.
-Programming Academy in Silicon valley.
-**Codewars
-Udemy
-\*\*React
+*Mogilev State University. Faculty of foreign languages and informatics.
+*VisualBasic 6.0*
+==============================================
+*Programming Academy in Silicon valley.
+==============================================
+_Codewars._
+==============================================
 
-# Languages
+\*Udemy
+_React._
+==============================================
+HTMLacademy
+_Figma, HTML-5._
+==============================================
 
-**Russian
-**Belorussian
+###### Languages
+
+*Russian
+*Belorussian
 \*English (B2 in process)
