@@ -50,16 +50,20 @@ return s.slice(0,-1);
 ###### Education
 
 1. Mogilev State University. Faculty of foreign languages and informatics.
-   VisualBasic 6.0
+
+- VisualBasic 6.0
 
 2. Programming Academy in Silicon valley.
-   Codewars
+
+- Codewars
 
 3. Udemy.
-   React
+
+- React
 
 4. HTMLacademy.
-   Figma, HTML-5
+
+- Figma, HTML-5
 
 ###### Languages
 
