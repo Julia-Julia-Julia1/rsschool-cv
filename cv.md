@@ -42,10 +42,10 @@ let s='';
 for(let i=n; i>=1; i--){
 s+= '*'.repeat(i) +'\n';
 
-}
-return s.slice(0,-1);
-}
+
+
 ```
+
 
 ###### Education
 
@@ -65,6 +65,8 @@ return s.slice(0,-1);
 
 - Figma, HTML-5
 
+
+=======
 
 ###### Languages
 
