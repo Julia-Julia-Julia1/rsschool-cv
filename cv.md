@@ -25,49 +25,48 @@
 
 ##### Code Examples
 
-Напишите функцию с именем upsideDown, которая принимает число n в качестве аргумента и возвращает треугольник из n строк, состоящих из звездочек (\*). В первой строке n звездочек, во второй - (n-1) звездочка, ... , в последней строке 1 звездочка.
+```Напишите функцию с именем upsideDown, которая принимает число n в качестве аргумента и возвращает треугольник из n строк, состоящих из звездочек (*). В первой строке n звездочек, во второй - (n-1) звездочка, ... , в последней строке 1 звездочка.
 Все строки кроме последней, заканчиваются символом \n перевода строки.
 Например, для n = 5, должна быть получена строка:
-"**\***\n\***_\n_**\n\*_\n_"
+"*****\n****\n***\n**\n*"
 При выводе в консоль такая строка отображается как "перевернутый треугольник":
 
-```
-**\***
-\*\*
-\*
-```
+"*****
+****
+***
+**
+*"
 
-=======================
-
-```
 function upsideDown(n){
 let s='';
 for(let i=n; i>=1; i--){
-s+= '\*'.repeat(i) +'\n';
-}
-return s.slice(0,-1);
-}
+s+= '*'.repeat(i) +'\n';
+
+
+
 ```
 
-=======================
 
 ###### Education
 
-1. Mogilev State University. Faculty of foreign languages and informatics
+1. Mogilev State University. Faculty of foreign languages and informatics.
 
 - VisualBasic 6.0
 
-2. Programming Academy in Silicon valley
+2. Programming Academy in Silicon valley.
 
 - Codewars
 
-3. Udemy
+3. Udemy.
 
 - React
 
-4. HTMLacademy
+4. HTMLacademy.
 
 - Figma, HTML-5
+
+
+=======
 
 ###### Languages
 
