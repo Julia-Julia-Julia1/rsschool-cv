@@ -1,6 +1,6 @@
 # **cv.md**
 
-<img src="./images/Yuliya.jpg" alt="My photo" width="200"/>
+<img src="./assets/images/Yuliya.jpg" alt="My photo" width="200"/>
 
 ## Yuliya Haluza
 
