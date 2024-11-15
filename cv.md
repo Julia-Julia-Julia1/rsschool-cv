@@ -1,4 +1,4 @@
-**<img src="./images/me.jpg" width="200"/>**
+**<img src="./images/photo.jpg" width="200"/>**
 
 # Yuliya Haluza
 
