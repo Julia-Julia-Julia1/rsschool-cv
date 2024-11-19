@@ -78,7 +78,12 @@
   font-family: "Pacifico", sans-serif;
   src: url("assets/fonts/pacifico/Pacifico-Regular.ttf");
 }
-
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto";
   /* минимальная высота body не может быть меньше высоты страницы */
@@ -104,8 +109,31 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style: none;
+  /*  */
+  padding: 0 20px;
+  line-height: 50px;
+}
+.nav-link {
+  transition: 0.3s;
+}
+.section-item a {
+  color: #829985;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.section-item a:hover {
+  color: #4d2323;
+}
+/* в 2 колонки распологаем контент */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.section {
+  width: 50%;
+}
 .fit-picture {
   width: 250px;
 }
