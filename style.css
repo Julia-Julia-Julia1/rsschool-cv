@@ -110,17 +110,16 @@ body {
   margin: 0 auto;
 }
 /* Чтобы разместить все элементы навигации в строку, элементу .nav-list указываем свойство display: flex;, сдвинуть их вправо позволит свойство justify-content: flex-end;, выровнять по центру по высоте свойство align-items: center */
-.nav__list {
+.nav-list {
   border: 1px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  /*  */
-  padding: 0 20px;
-  line-height: 50px;
 }
 .nav-link {
+  padding: 0 20px;
+  line-height: 50px;
   transition: 0.3s;
 }
 .section-item a {
