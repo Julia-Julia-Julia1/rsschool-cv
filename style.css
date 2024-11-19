@@ -71,6 +71,7 @@
   font-weight: 900;
   font-style: italic;
 }
+
 /* Подключение различных видов шрифта Pacifico. Подключение шрифтов из папки проекта.*/
 
 @font-face {
@@ -78,7 +79,35 @@
   src: url("assets/fonts/pacifico/Pacifico-Regular.ttf");
 }
 
+body {
+  font-family: "Roboto";
+  /* минимальная высота body не может быть меньше высоты страницы */
+  min-height: 100vh;
+  /*Появилась линейка прокрутки. Чтобы убрарть применим след свой-ва.*/
+  margin: 0;
+  padding: 0;
+  /* Прижмем footer к низу страницы */
+  display: flex;
+  /* выравнивает элементы по горизонтали */
+  flex-direction: column;
+  /* все элементы размещаются на максимальном расстоянии друг от друга */
+  justify-content: space-between;
+}
+
+/* не превышает 1440px, если окно браузера больше, свойство max-width ограничивает ширину контейнера */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Чтобы разместить все элементы навигации в строку, элементу .nav-list указываем свойство display: flex;, сдвинуть их вправо позволит свойство justify-content: flex-end;, выровнять по центру по высоте свойство align-items: center */
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .fit-picture {
   width: 250px;
 }
+
 background-image: url("../assets/img/image.jpg");
