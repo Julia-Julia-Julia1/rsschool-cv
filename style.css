@@ -81,10 +81,14 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
+  /* Установили видимые границы пока не полный контент */
+  border: 1px solid red;
   font-family: "Roboto";
   /* минимальная высота body не может быть меньше высоты страницы */
   min-height: 100vh;
@@ -101,11 +105,13 @@ body {
 
 /* не превышает 1440px, если окно браузера больше, свойство max-width ограничивает ширину контейнера */
 .container {
+  border: 1px solid red;
   max-width: 1440px;
   margin: 0 auto;
 }
 /* Чтобы разместить все элементы навигации в строку, элементу .nav-list указываем свойство display: flex;, сдвинуть их вправо позволит свойство justify-content: flex-end;, выровнять по центру по высоте свойство align-items: center */
 .nav__list {
+  border: 1px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -127,11 +133,13 @@ body {
 }
 /* в 2 колонки распологаем контент */
 .main-container {
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
 }
 
 .section {
+  border: 1px solid red;
   width: 50%;
 }
 .fit-picture {
