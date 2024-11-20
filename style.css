@@ -89,7 +89,11 @@ html {
 body {
   /* Установили видимые границы пока не полный контент */
   border: 1px solid red;
-  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+  font-family: "Roboto", sans-serif;
   /* минимальная высота body не может быть меньше высоты страницы */
   min-height: 100vh;
   /*Появилась линейка прокрутки. Чтобы убрарть применим след свой-ва.*/
@@ -118,17 +122,36 @@ body {
   list-style: none;
 }
 .nav-link {
+  font-family: Pacifico;
+  text-decoration: none;
+  color: #ff9205;
+  font-size: 34px;
   padding: 0 20px;
   line-height: 50px;
   transition: 0.3s;
 }
 .section-item a {
-  color: #829985;
+  color: #ff9205;
   text-decoration: none;
   transition: color 0.5s;
 }
 .section-item a:hover {
   color: #4d2323;
+}
+.section-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.section-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 /* в 2 колонки распологаем контент */
 .main-container {
@@ -144,8 +167,50 @@ body {
 .skills-list {
   list-style: none;
 }
+
+#profile {
+  background-color: rgb(221, 29, 93);
+}
+
+#contacts {
+  background-color: rgb(108, 252, 75);
+}
+
+#summary {
+  background-color: rgb(239, 239, 57);
+}
+
+#skills {
+  background-color: rgb(45, 29, 221);
+}
+
+#code {
+  background-color: rgb(108, 252, 75);
+}
+
+#education {
+  background-color: rgb(221, 29, 93);
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: black;
+}
+
 .fit-picture {
   width: 250px;
+}
+.fit-picture {
+  border-radius: 50%;
+}
+.rss {
+  /* width: 121px;
+  height: 45px; */
+  background-image: url("./assets/svg/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 background-image: url("../assets/img/image.jpg");
