@@ -1,4 +1,4 @@
-/* Подключение различных видов шрифта Roboto. Подключение шрифтов через Google Fonts*/
+/* Подключение различных видов шрифта Roboto. Подключение шрифтов через Google Fonts */
 
 .roboto-thin {
   font-family: "Roboto", sans-serif;
@@ -72,12 +72,13 @@
   font-style: italic;
 }
 
-/* Подключение различных видов шрифта Pacifico. Подключение шрифтов из папки проекта.*/
+/* Подключение различных видов шрифта Pacifico. Подключение шрифтов из папки проекта */
 
 @font-face {
-  font-family: "Pacifico", sans-serif;
+  font-family: "Pacifico";
   src: url("assets/fonts/pacifico/Pacifico-Regular.ttf");
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -96,7 +97,7 @@ body {
   font-family: "Roboto", sans-serif;
   /* минимальная высота body не может быть меньше высоты страницы */
   min-height: 100vh;
-  /*Появилась линейка прокрутки. Чтобы убрарть применим след свой-ва.*/
+  /* Появилась линейка прокрутки. Чтобы убрать применим след свойства */
   margin: 0;
   padding: 0;
   /* Прижмем footer к низу страницы */
@@ -113,7 +114,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-/* Чтобы разместить все элементы навигации в строку, элементу .nav-list указываем свойство display: flex;, сдвинуть их вправо позволит свойство justify-content: flex-end;, выровнять по центру по высоте свойство align-items: center */
+
+/* Чтобы разместить все элементы навигации в строку, элементу .nav-list указываем свойство display: flex; сдвинуть их вправо позволит свойство justify-content: flex-end; выровнять по центру по высоте свойство align-items: center */
 .nav-list {
   border: 1px solid red;
   display: flex;
@@ -121,6 +123,7 @@ body {
   align-items: center;
   list-style: none;
 }
+
 .nav-link {
   font-family: Pacifico;
   text-decoration: none;
@@ -130,14 +133,17 @@ body {
   line-height: 50px;
   transition: 0.3s;
 }
+
 .section-item a {
   color: #ff9205;
   text-decoration: none;
   transition: color 0.5s;
 }
+
 .section-item a:hover {
   color: #4d2323;
 }
+
 .section-item {
   position: relative;
   padding-left: 30px;
@@ -153,7 +159,8 @@ body {
   border: 1px solid black;
   border-radius: 50%;
 }
-/* в 2 колонки распологаем контент */
+
+/* в 2 колонки располагаем контент */
 .main-container {
   border: 1px solid red;
   display: flex;
@@ -164,8 +171,26 @@ body {
   border: 1px solid red;
   width: 50%;
 }
+
 .skills-list {
   list-style: none;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 30px 35px;
+  border-bottom: 15px solid #d7d1c9;
+}
+
+.js-developer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #profile {
@@ -189,9 +214,31 @@ body {
 }
 
 #education {
-  background-color: rgb(221, 29, 93);
+  background-color: white;
 }
-.section-title {
+
+#language {
+  background-color: rgb(255, 254, 254);
+}
+
+/* Исправлен список заголовков, удален h7 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+p {
+  text-indent: 20px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.section-title,
+.text-developer {
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
@@ -200,17 +247,8 @@ body {
 }
 
 .fit-picture {
-  width: 250px;
-}
-.fit-picture {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  object-fit: cover;
 }
-.rss {
-  /* width: 121px;
-  height: 45px; */
-  background-image: url("./assets/svg/rss.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-background-image: url("../assets/img/image.jpg");
