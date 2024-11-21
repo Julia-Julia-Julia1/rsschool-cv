@@ -113,6 +113,7 @@ body {
   border: 1px solid red;
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 50px;
 }
 
 /* Чтобы разместить все элементы навигации в строку, элементу .nav-list указываем свойство display: flex; сдвинуть их вправо позволит свойство justify-content: flex-end; выровнять по центру по высоте свойство align-items: center */
@@ -133,7 +134,9 @@ body {
   line-height: 50px;
   transition: 0.3s;
 }
-
+.text-developer {
+  font-family: Pacifico;
+}
 .section-item a {
   color: #ff9205;
   text-decoration: none;
@@ -175,7 +178,12 @@ body {
 .skills-list {
   list-style: none;
 }
-
+.section-item {
+  list-style: none;
+}
+.section-link {
+  list-style: none;
+}
 .section-profile {
   display: flex;
   justify-content: space-around;
@@ -251,4 +259,33 @@ p {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.header {
+  background-color: #4fcc5f;
+  padding: 20px;
+}
+.footer {
+  background-color: #4fcc5f;
+  padding: 20px;
+}
+.footer-container {
+  display: flex;
+  /* Разделяем контент по разным сторонам */
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/images/rs-school-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main {
+  background-color: #4fcc5f;
 }
