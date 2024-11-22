@@ -1,6 +1,7 @@
 html {
   background-color: #4fcc5f;
 }
+
 body {
   /* Установили видимые границы пока не полный контент */
   border: 1px solid red;
@@ -16,6 +17,7 @@ body {
   flex-direction: column; /* все элементы размещаются на максимальном расстоянии друг от друга */
   justify-content: space-between;
 }
+
 .main-container {
   display: flex;
   flex-wrap: wrap; /*позволяет элементам переноситься на новую строку, если они не помещаются в одну строку.*/
