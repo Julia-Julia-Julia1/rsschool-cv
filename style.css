@@ -121,6 +121,14 @@ body {
   padding-left: 40px;
   margin-bottom: 10px;
 }
+.my-best-job-item a {
+  color: #4d2323;
+}
+.my-best-job-item {
+  list-style: none;
+  padding-left: 40px;
+  padding-top: 140px;
+}
 
 .section-item-1::before,
 .section-item-2::before,
