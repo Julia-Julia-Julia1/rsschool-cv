@@ -1,0 +1,282 @@
+html {
+  background-color: #4fcc5f;
+}
+
+body {
+  /* Установили видимые границы пока не полный контент */
+  border: 1px solid red;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+  font-family: "Roboto", sans-serif; /* минимальная высота body не может быть меньше высоты страницы */
+  min-height: 100vh; /* Появилась линейка прокрутки. Чтобы убрать применим след свойства */
+  margin: 0;
+  padding: 0; /* Прижмем footer к низу страницы */
+  display: flex; /* выравнивает элементы по горизонтали */
+  flex-direction: column; /* все элементы размещаются на максимальном расстоянии друг от друга */
+  justify-content: space-between;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap; /*позволяет элементам переноситься на новую строку, если они не помещаются в одну строку.*/
+}
+
+.section {
+  border: 1px solid red;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Устанавливаем порядок для секций */
+.section-profile {
+  order: 1;
+  flex: 1 1 100%; /* Полная ширина контейнера */
+}
+
+.section-contacts {
+  order: 2;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-summary {
+  order: 3;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-skills {
+  order: 4;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-code {
+  order: 5;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-education {
+  order: 6;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-language {
+  order: 7;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+/* Остальные стили остаются без изменений */
+.container {
+  border: 1px solid red;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+.nav-list {
+  border:
+    1,
+    5px solid red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: Pacifico;
+  text-decoration: none;
+  color: #ff9205;
+  font-size: 34px;
+  padding: 0 20px;
+  line-height: 1.5;
+  transition: 0.3s;
+}
+
+.text-developer {
+  font-family: Pacifico;
+}
+
+.section-item a {
+  color: #ff9205;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.section-item a:hover {
+  color: #4d2323;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+}
+
+.section-item-1,
+.section-item-2,
+.section-item-3,
+.section-item-4,
+.section-item-5 {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+.my-best-job-item a {
+  color: #4d2323;
+}
+.my-best-job-item {
+  list-style: none;
+  padding-left: 40px;
+  padding-top: 140px;
+}
+
+.section-item-1::before,
+.section-item-2::before,
+.section-item-3::before,
+.section-item-4::before,
+.section-item-5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 33px;
+  height: 34px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-item-1::before {
+  background-image: url(assets/svg/1-geo-metka.svg);
+}
+
+.section-item-2::before {
+  background-image: url(assets/svg/2-envelope.svg);
+}
+
+.section-item-3::before {
+  background-image: url(assets/svg/3-github.svg);
+}
+
+.section-item-4::before {
+  background-image: url(assets/svg/4-telegram.svg);
+}
+
+.section-item-5::before {
+  background-image: url(assets/svg/5-phone.svg);
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.section-item {
+  font-size: 14px;
+  list-style: none;
+}
+
+.section-link {
+  list-style: none;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 30px 35px;
+  border-bottom: 15px solid #d7d1c9;
+}
+
+.js-developer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#profile {
+  background-color: rgb(221, 29, 93);
+}
+
+#contacts {
+  background-color: rgb(108, 252, 75);
+}
+
+#summary {
+  background-color: rgb(239, 239, 57);
+}
+
+#skills {
+  background-color: rgb(45, 29, 221);
+}
+
+#code {
+  background-color: rgb(108, 252, 75);
+}
+
+#education {
+  background-color: white;
+}
+
+#language {
+  background-color: rgb(255, 254, 254);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+p {
+  text-indent: 20px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.section-title,
+.text-developer {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.fit-picture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header {
+  background-color: #4fcc5f;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #4fcc5f;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/images/rs-school-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

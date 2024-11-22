@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      size="32*32"
+      href="assets/images/view-of-turtle-at-the-beach-in-summer.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item nav-item--current">
+              <!-- Ссылки якоря #profile -->
+              <a href="#profile" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item nav-item--current">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#language" class="nav-link">Language</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main-container">
+        <section class="section section-profile" id="profile">
+          <div class="js-developer">
+            <h1 class="section-title">Yuliya Haluza</h1>
+            <p class="text text-developer">js developer</p>
+          </div>
+          <img
+            class="fit-picture"
+            src="assets/images/photo.jpg"
+            alt="My real photo" />
+        </section>
+        <section class="section section-contacts" id="contacts">
+          <h2 class="section-title">My Contact Info:</h2>
+          <ul class="section-list">
+            <li class="section-item-1 contacts-item">Minsk, Belarus</li>
+            <li class="section-item-2 contacts-item">
+              Email:
+              <a href="mailto:yuliyahaluza@gmail.com" title="email"
+                >yuliyahaluza@gmail.com</a
+              >
+            </li>
+            <li class="section-item-3 contacts-item">
+              Github:
+              <a href="https://github.com/Julia-Julia-Julia1" title="github"
+                >Julia-Julia-Julia1</a
+              >
+            </li>
+            <li class="section-item-4 contacts-item">
+              Telegram:
+              <a href="https://t.me/YuliyaHaluza" title="telegram"
+                >@YuliyaHaluza</a
+              >
+            </li>
+            <li class="section-item-5 contacts-item">
+              Phone:
+              <a href="tel:+375293844906" title="phone">+375 29 384-49-06</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section section-summary" id="summary">
+          <h3 class="section-title">About Me</h3>
+          <p>
+            Hi everyone! My name is Yuliya. I haven't had experience in large IT
+            companies. I want to become a real professional in this field.
+            Sociable, love learning new technologies. Love reading, friendly.
+            Driving a car. I'm here for my growth and learning. And to update my
+            knowledge in the field of front-end development.
+          </p>
+        </section>
+        <section class="section section-skills" id="skills">
+          <h4 class="section-title">Skills</h4>
+          <ol class="skills-list">
+            <li class="skills-item">HTML-5</li>
+            <li class="skills-item">CSS-3</li>
+            <li class="skills-item">JavaScript (Fundamentals, ES6+, DOM)</li>
+            <li class="skills-item">Git/GitHub</li>
+            <li class="skills-item">Figma</li>
+          </ol>
+          <div class="my-best-job">
+              <li class="my-best-job-item">
+                <!-- Ссылки якоря #profile -->
+                <a href="https://julia-julia-julia1.github.io/Barber-flex/" class="my-best-job-link">MY BEST WORK: https://julia-julia-julia1.github.io/Barber-flex/</a>
+              </li>
+            <div/>
+        </section>
+        <section class="section section-code" id="code">
+          <h5 class="section-title">Code Example</h5>
+          <p>
+            Напишите функцию с именем upsideDown, которая принимает число n в
+            качестве аргумента и возвращает треугольник из n строк, состоящих из
+            звездочек (\*). В первой строке n звездочек, во второй - (n-1)
+            звездочка, ... , в последней строке 1 звездочка. Все строки кроме
+            последней, заканчиваются символом \n перевода строки. Например, для
+            n = 5, должна быть получена строка: "**\***\n\***_\n_**\n\*_\n_".
+            При выводе в консоль такая строка отображается как "перевернутый
+            треугольник":
+          </p>
+          <p>
+            function upsideDown(n) {
+            <br />
+            let s = '';
+            <br />
+            for(let i = n; i >= 1; i--) { s += '\*'.repeat(i) +'\n';
+            <br />
+            }return s.slice(0, -1);<br />
+            }
+          </p>
+        </section>
+        <section class="section section-education" id="education">
+          <h6 class="section-title">Education</h6>
+          <ol class="education-list">
+            <li class="education-item">
+              Programming Academy in Silicon Valley
+            </li>
+            <li class="education-item">HTML-academy</li>
+            <li class="education-item">Udemy</li>
+            <li class="education-item">Mogilev State University</li>
+          </ol>
+        </section>
+        <section class="section section-language" id="language">
+          <h6 class="section-title">Language</h6>
+          <ul class="language-list">
+            <li class="language-item">English-B2</li>
+            <li class="language-item">Russian</li>
+            <li class="language-item">Belarussian</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          © 2024
+          <a href="#" class="github nav-link">yuliya</a>
+        </nav>
+        <a href="https://rs.school/courses/javascript-ru" class="rss" aria-label="RS School logo"></a>
+      </div>
+    </footer>
+  </body>
+</html>
