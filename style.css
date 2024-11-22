@@ -1,114 +1,55 @@
-/* Подключение различных видов шрифта Roboto. Подключение шрифтов через Google Fonts */
-
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* Подключение различных видов шрифта Pacifico. Подключение шрифтов из папки проекта */
-
-@font-face {
-  font-family: "Pacifico";
-  src: url("assets/fonts/pacifico/Pacifico-Regular.ttf");
-}
-
 html {
-  scroll-behavior: smooth;
+  background-color: #4fcc5f;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  /* Установили видимые границы пока не полный контент */
-  border: 1px solid red;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #4d2323;
-  font-family: "Roboto", sans-serif;
-  /* минимальная высота body не может быть меньше высоты страницы */
-  min-height: 100vh;
-  /* Появилась линейка прокрутки. Чтобы убрать применим след свойства */
-  margin: 0;
-  padding: 0;
-  /* Прижмем footer к низу страницы */
+.main-container {
   display: flex;
-  /* выравнивает элементы по горизонтали */
-  flex-direction: column;
-  /* все элементы размещаются на максимальном расстоянии друг от друга */
-  justify-content: space-between;
+  flex-wrap: wrap; /*позволяет элементам переноситься на новую строку, если они не помещаются в одну строку.*/
 }
 
-/* не превышает 1440px, если окно браузера больше, свойство max-width ограничивает ширину контейнера */
+.section {
+  border: 1px solid red;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Устанавливаем порядок для секций */
+.section-profile {
+  order: 1;
+  flex: 1 1 100%; /* Полная ширина контейнера */
+}
+
+.section-contacts {
+  order: 2;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-summary {
+  order: 3;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-skills {
+  order: 4;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-code {
+  order: 5;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-education {
+  order: 6;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+.section-language {
+  order: 7;
+  flex: 1 1 50%; /* Половина ширины контейнера */
+}
+
+/* Остальные стили остаются без изменений */
 .container {
   border: 1px solid red;
   max-width: 1440px;
@@ -116,9 +57,10 @@ body {
   min-height: 50px;
 }
 
-/* Чтобы разместить все элементы навигации в строку, элементу .nav-list указываем свойство display: flex; сдвинуть их вправо позволит свойство justify-content: flex-end; выровнять по центру по высоте свойство align-items: center */
 .nav-list {
-  border: 1px solid red;
+  border:
+    1,
+    5px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -134,9 +76,11 @@ body {
   line-height: 50px;
   transition: 0.3s;
 }
+
 .text-developer {
   font-family: Pacifico;
 }
+
 .section-item a {
   color: #ff9205;
   text-decoration: none;
@@ -147,43 +91,69 @@ body {
   color: #4d2323;
 }
 
-.section-item {
-  position: relative;
-  padding-left: 30px;
+.section-list {
+  list-style: none;
+  padding: 0;
 }
 
-.section-item::before {
+.section-item-1,
+.section-item-2,
+.section-item-3,
+.section-item-4,
+.section-item-5 {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+.section-item-1::before,
+.section-item-2::before,
+.section-item-3::before,
+.section-item-4::before,
+.section-item-5::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid black;
-  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 33px;
+  height: 34px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-/* в 2 колонки располагаем контент */
-.main-container {
-  border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
+.section-item-1::before {
+  background-image: url(assets/svg/1-geo-metka.svg);
 }
 
-.section {
-  border: 1px solid red;
-  width: 50%;
+.section-item-2::before {
+  background-image: url(assets/svg/2-envelope.svg);
+}
+
+.section-item-3::before {
+  background-image: url(assets/svg/3-github.svg);
+}
+
+.section-item-4::before {
+  background-image: url(assets/svg/4-telegram.svg);
+}
+
+.section-item-5::before {
+  background-image: url(assets/svg/5-phone.svg);
 }
 
 .skills-list {
   list-style: none;
 }
+
 .section-item {
   list-style: none;
 }
+
 .section-link {
   list-style: none;
 }
+
 .section-profile {
   display: flex;
   justify-content: space-around;
@@ -229,7 +199,6 @@ body {
   background-color: rgb(255, 254, 254);
 }
 
-/* Исправлен список заголовков, удален h7 */
 h1,
 h2,
 h3,
@@ -265,13 +234,14 @@ p {
   background-color: #4fcc5f;
   padding: 20px;
 }
+
 .footer {
   background-color: #4fcc5f;
   padding: 20px;
 }
+
 .footer-container {
   display: flex;
-  /* Разделяем контент по разным сторонам */
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -284,8 +254,4 @@ p {
   background-image: url("./assets/images/rs-school-logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.main {
-  background-color: #4fcc5f;
 }
